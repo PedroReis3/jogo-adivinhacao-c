@@ -16,11 +16,12 @@ int main()
 		printf("\n1 - Jogar\n");
 		printf("2 - Regras\n");
 		printf("3 - Sair\n");	
-		printf("\nEscolha: ");
+		printf("\nFaca sua escolha: ");
 		scanf("%d", &menuPrincipal);	
 		
 		while (menuPrincipal < 1 || menuPrincipal > 3){
-			printf("Opcao invalida.\n");
+			printf("\nOpcao invalida.\n");
+			printf("Escolha novamente: ");
 			scanf("%d", &menuPrincipal);
 		}
 		
@@ -39,7 +40,7 @@ int main()
 					
 					do {
 					
-						printf("\nEscolha: ");
+						printf("\nFaca sua escolha: ");
 						scanf("%d", &dificuldade);
 						
 						switch(dificuldade){
@@ -88,7 +89,7 @@ int main()
 					printf("\nGostaria de jogar novamente?\n");
 					printf("\n1 - Sim\n");
 					printf("2 - Nao, sair\n");
-					printf("\nEscolha: ");
+					printf("\nFaca sua escolha: ");
 					scanf("%d", &opcao);
 					
 					while (opcao < 1 || opcao > 2){
@@ -126,7 +127,7 @@ int main()
 					printf("\nBoa sorte!\n");
 					
 					printf("\n1 - Voltar ao menu principal.\n");
-					printf("Escolha: ");
+					printf("Faca sua escolha: ");
 					scanf("%d", &menuRegras);
 				} while (menuRegras != 1);
 			break;
